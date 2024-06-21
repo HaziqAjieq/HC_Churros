@@ -1,0 +1,88 @@
+.header {
+  position: absolute;
+  width: 100%;
+  padding: 20px 30px;
+  background: red;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .Logo {
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+
+  .navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 20px;
+
+    a {
+      color: white;
+      text-decoration: none;
+      font-size: 1.3rem;
+
+      &:hover {
+        color: #FF6500;
+        text-decoration: underline;
+      }
+    }
+  }
+
+  .menu-icon {
+    display: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: white;
+  }
+
+  @media (max-width: 768px) {
+    .navbar {
+      display: none; // Hide navbar links on smaller screens
+    }
+
+    .menu-icon {
+      display: block; // Show the menu icon on smaller screens
+    }
+
+    .header{
+      background-color: black;
+    }
+  }
+}
+
+.menu-dropdown {
+  display: none;
+  flex-direction: column;
+  gap: 10px;
+  background-color: red;
+  position: absolute;
+  text-align: center;
+  justify-content: center;
+  width: 100%;
+  margin: 68px 0px;
+  padding-bottom: 30px;
+  
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  
+  a {
+    color: white;
+    text-decoration: none;
+  
+    padding: 10px;
+    display: block;
+    text-align: center;
+
+    &:hover {
+      color: #FF6500;
+    }
+  }
+
+  &.show {
+    display: flex;
+     // Show dropdown menu when .show class is added
+  }
+}

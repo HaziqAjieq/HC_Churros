@@ -1,0 +1,143 @@
+#root{
+  background-color: rgb(179, 32, 32);
+ 
+}
+
+.container{
+ 
+  width: auto;
+
+  .contact-container{
+  
+    h1{
+      font-size: 6rem;
+      color: white;
+      @media(max-width:900px){
+        font-size: 4rem;
+       
+      }
+
+      @media(max-width:600px){
+        padding-top: 20px;
+        font-size: 2rem;
+       
+      }
+    }
+
+    padding-top: 20%;
+    text-align: center;
+    width:100%;
+    height: 100%;
+    display: inline-block;
+    border-color: black;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../../assets/marketingImg/img22.jpeg');
+    background-size: cover ;
+  
+    .social-media {
+      display: flex;
+      flex-direction: column;
+    
+      align-items: center;
+      padding-top: 5%;
+      padding-bottom: 2%;
+      .icon-container {
+        display: flex;
+        flex-direction: row;
+        background-color: white;
+        height: 60px;
+        width: 60px;
+        border-radius: 50%;
+        font-size: 4rem;
+        margin: 5px;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        transition: all 0.3s ease-out;
+        text-decoration: none;
+        overflow: hidden; // Ensure text doesn't overflow
+        width: 600px;
+        height:150px;
+        border-radius: 50px 50px ;
+        
+        
+        
+        a {
+          color: black;
+          text-decoration: none;
+        
+        }
+  
+        &:hover {
+          
+          .facebook {
+            color: #3b5998;
+          }
+    
+          .instagram {
+            color: #c32aa3;
+          }
+    
+          .tiktok {
+            color: #010101;
+          }
+    
+          .whatsapp {
+            color: #25d366;
+          }
+    
+         
+        }
+      }
+
+      @media(max-width:900px){
+        .icon-container {
+          display: flex;
+          flex-direction: row;
+          background-color: white;
+          height: 60px;
+          width: 60px;
+          border-radius: 50%;
+          font-size: 3rem;
+          margin: 5px;
+          justify-content: center;
+          align-items: center;
+          cursor: pointer;
+          transition: all 0.3s ease-out;
+          text-decoration: none;
+          overflow: hidden; // Ensure text doesn't overflow
+          width: 400px;
+          height:120px;
+          border-radius: 50px 50px ;
+          
+       
+      }
+    }
+
+    @media(max-width:600px){
+      .icon-container {
+        display: flex;
+        flex-direction: row;
+        background-color: white;
+        height: 60px;
+        width: 60px;
+        border-radius: 50%;
+        font-size: 2rem;
+        margin: 5px;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        transition: all 0.3s ease-out;
+        text-decoration: none;
+        overflow: hidden; // Ensure text doesn't overflow
+        width: 300px;
+        height:80px;
+        border-radius: 50px 50px ;
+        
+     
+    }
+  }
+    }
+  
+  }
+
+}

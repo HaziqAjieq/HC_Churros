@@ -1,0 +1,163 @@
+@keyframes fadeIn{
+ from{
+  opacity: 0;
+ }
+ to{
+  opacity: 1;
+ }
+}
+
+.licensing-container{
+  margin-top: 2%;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2)), 
+  url('../../assets/marketingImg/img22.jpeg');
+  
+  
+  background-size: cover;
+
+
+  .licensing-card{
+  margin-top: 6%;
+  margin-bottom: 3%;
+
+
+    p{
+      font-size: 1.5rem;
+
+      @media(max-width:600px){
+        font-size: 1rem;
+      }
+    }
+
+    
+
+  button{
+          margin: 10px;
+          padding:5px 10px;
+          border: none;
+          color: white;
+          font-size: 1.8rem;
+          background-color: red;
+          border-radius: 10px;
+          text-decoration: none;
+        
+          &:hover{
+            background-color: goldenrod;
+            color: black;
+            cursor: pointer;
+            transition: 0.6s;
+          }
+
+          @media(max-width:600px){
+            margin: 10px;
+          padding:5px 10px;
+          border: none;
+          color: white;
+          font-size: 1.2rem;
+          background-color: red;
+          border-radius: 10px;
+          text-decoration: none;
+          }
+        }
+  }
+
+  footer{
+    padding-top: 3% ;
+    background-color: rgba(0, 0, 0, 0.5); // 0.5 is 50% opacity
+    
+    h2{
+      color: white;
+    }
+  .social-media {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-bottom: 2%;
+    .icon-container {
+      display: flex;
+      flex-direction: row;
+      background-color: white;
+      height: 60px;
+      width: 60px;
+      border-radius: 50%;
+      font-size: 2rem;
+      margin: 5px;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      transition: all 0.3s ease-out;
+      text-decoration: none;
+      overflow: hidden; // Ensure text doesn't overflow
+  
+      a {
+        color: black;
+      }
+  
+      span {
+        display: none; // Ensure the span takes the 
+      }
+  
+      &:hover {
+        width: 200px;
+        border-radius: 20px;
+  
+        .facebook {
+          color: #3b5998;
+        }
+  
+        .instagram {
+          color: #c32aa3;
+        }
+  
+        .tiktok {
+          color: #010101;
+        }
+  
+        .whatsapp {
+          color: #25d366;
+        }
+  
+        span {
+          display: inline-block;
+          left: 0;
+          animation: fadeIn 1s ease-in-out;
+          
+          
+         
+        }
+      }
+    }
+  }
+  
+  .footer-end{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: red;
+    padding: 2%;
+    
+    a{
+      text-decoration: none;
+      color: white;
+      font-size: 2rem;
+      padding:0 10px;
+
+      @media(max-width: 600px){
+      
+       font-size:1.4rem;
+     
+      }
+
+      
+      @media(max-width: 400px){
+      
+        font-size:1rem;
+      
+       }
+
+    }
+    
+  
+  }
+}
+}

@@ -1,0 +1,14 @@
+
+.swiper-container{
+  padding-top: 5%;
+}
+.mySwiper {
+  width: 100%;
+  height: auto; // Adjust height as needed
+}
+
+.image {
+  width: 100%;
+  height: auto;
+  object-fit: cover; // Ensure images cover the slide area without distortion
+}

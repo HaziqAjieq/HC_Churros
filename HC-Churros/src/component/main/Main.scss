@@ -1,0 +1,59 @@
+
+.parent-container{
+  width: 100%;
+  padding-top: 15%;
+  text-align: center;
+  display: inline-block;
+  border-color: black;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2)), url('../../assets/marketingImg/image1.jpeg');
+  background-size: cover ;
+  
+  
+ 
+  h1{
+    color: white;
+    font-size: 4rem;
+    padding: 40px;
+
+    
+  
+  .crunch{
+      color: goldenrod;
+      font-size: 6rem;
+      text-decoration: none;
+    }
+
+    @media (max-width: 768px){
+      padding-top: 30%;
+      font-size: 2.3rem;
+  
+    a{
+      font-size: 2.9rem;
+      color: goldenrod;
+    }
+  }
+  }
+
+  .learn-btn{
+    margin: 10px;
+    padding: 10px 15px;
+    border: none;
+    color: white;
+    font-size: 1.5rem;
+    background-color: red;
+    border-radius: 10px;
+    text-decoration: none;
+    &:hover{
+      background-color: goldenrod;
+      color: black;
+      cursor: pointer;
+      transition: 0.6s;
+    }
+    @media (max-width: 768px){
+      padding: 8px 10px;
+      font-size: 1.3rem;
+    }
+  }
+
+ 
+}
